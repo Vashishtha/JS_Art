@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+/* Next & previous buttons */
+#slgprev,
+#slgnext {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+#slgnext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#slgprev:hover,
+#slgnext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #ddd;
+}
+
+#start-btn {
+  font-size: 36px;
+  padding: 20px 40px 20px 80px ;
+  margin-top: 30px;
+  border-radius: 10px;
+  background:url("thanos-logo.png") white 15px no-repeat;
+  background-size: 50px;
+}
+.dust {
+  position: absolute;
+}
